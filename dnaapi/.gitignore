@@ -29,3 +29,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### SEI LA ###
+.settings
+
+### MAVEN ###
+.mvn
+
+### GERAL ###
+mvn
+mvnw.cmd
