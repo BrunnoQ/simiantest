@@ -8,11 +8,11 @@ package com.mercadolibre.dnaapi.business;
  * @since 20/11/2019
  * @author Brunno Silva
  */
-public class SearchArrayBusiness {
+public class MatrizBusiness {
 
     /**
-     * Obtem os elementos contidos em <b>diagonal a DIREITA de cima 
-     * para baixo </b>
+     * Obtem os elementos contidos em <b>diagonal a DIREITA de BAIXO 
+     * para CIMA </b>
      * no {@code Array} de {@code character}, passado como 
      * parametro.
      * @param linhaStart {@code Linha} inicial da pesquisa a ser realizada
@@ -43,8 +43,8 @@ public class SearchArrayBusiness {
     }
 
     /**
-     * Obtem os elementos contidos em <b>diagonal a ESQUERDA de cima 
-     * para baixo </b> de elementos contidos
+     * Obtem os elementos contidos em <b>diagonal a ESQUERDA de BAIXO 
+     * para CIMA </b> de elementos contidos
      * no {@code Array} de {@code character}, passado como 
      * parametro.
      * @param linhaStart {@code Linha} inicial da pesquisa a ser realizada
@@ -106,6 +106,20 @@ public class SearchArrayBusiness {
         }
 
         return arrayVertical;
+    }
+
+    /**
+     * Obtem a <b>posicao minima</b> onde o ponteiro do inicio de pesquisa
+     * deve ser posionado.Como se trata de uma matriz <b>QUADRADA</b> a busca deve
+     * ser realizada em blocos de no minimo <b>quatro elementos</b>.
+     * @param matriz cujo o qual o valor delimitante deve ser obtido.
+     * @return Retorna a posicao media no eixo Y da matriz.
+     */
+    public static int getMinimumPointSearch(char[][] matriz){
+
+        int minimumPointSearch = matriz.length - 4;
+
+        return minimumPointSearch;
     }
 
 }
