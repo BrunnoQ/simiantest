@@ -61,7 +61,7 @@ public class MatrizBusiness {
         int coluna = colunaStart;
 
         // Condicao de parada e a linha nao ser maior que o length da matriz
-        for (int i = 0; linha < matriz.length; i++) {
+        for (int i = 0; linha < matriz.length && coluna > -1; i++) {
 
             arrayDiagonalLeft[i] = matriz[linha][coluna];
 
@@ -82,7 +82,7 @@ public class MatrizBusiness {
      * @param matriz contendo os dados a serem pesquisados.
      * @return Retorna o {@code Array} de caracteres, obtida da pesquisa.
      */
-    public static char[] gethHorizontal(int linhaStart, char[][] matriz){
+    public static char[] getHorizontal(int linhaStart, char[][] matriz){
 
         char [] arrayHorizontal = matriz[linhaStart];
 
