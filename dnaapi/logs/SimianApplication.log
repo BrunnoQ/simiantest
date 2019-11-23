@@ -1,0 +1,167 @@
+2019-11-23T17:41:32.705-0200 [INFO] 2019-11-23 17:41:32,705 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusinessTest logStarting - Starting DefineSimianDnaBusinessTest on brunno-Inspiron-15-3567 with PID 24502 (started by brunno in /home/brunno/workspaces/mercadolibre/dnaapi)
+2019-11-23T17:41:32.717-0200 [DEBUG] 2019-11-23 17:41:32,717 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusinessTest logStarting - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-23T17:41:32.721-0200 [INFO] 2019-11-23 17:41:32,721 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusinessTest logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2019-11-23T17:41:38.001-0200 [INFO] 2019-11-23 17:41:38,001 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusinessTest logStarted - Started DefineSimianDnaBusinessTest in 5.797 seconds (JVM running for 7.737)
+2019-11-23T17:41:38.443-0200 [INFO] 2019-11-23 17:41:38,443 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.444-0200 [DEBUG] 2019-11-23 17:41:38,444 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.445-0200 [DEBUG] 2019-11-23 17:41:38,445 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 4
+2019-11-23T17:41:38.446-0200 [DEBUG] 2019-11-23 17:41:38,446 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.446-0200 [DEBUG] 2019-11-23 17:41:38,446 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.447-0200 [DEBUG] 2019-11-23 17:41:38,447 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:2
+2019-11-23T17:41:38.448-0200 [DEBUG] 2019-11-23 17:41:38,448 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:2
+2019-11-23T17:41:38.449-0200 [INFO] 2019-11-23 17:41:38,449 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.508-0200 [INFO] 2019-11-23 17:41:38,508 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchAllDnasDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.509-0200 [INFO] 2019-11-23 17:41:38,509 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.510-0200 [DEBUG] 2019-11-23 17:41:38,510 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.510-0200 [DEBUG] 2019-11-23 17:41:38,510 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 6
+2019-11-23T17:41:38.511-0200 [DEBUG] 2019-11-23 17:41:38,511 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.511-0200 [DEBUG] 2019-11-23 17:41:38,511 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.514-0200 [DEBUG] 2019-11-23 17:41:38,514 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.515-0200 [DEBUG] 2019-11-23 17:41:38,515 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.515-0200 [INFO] 2019-11-23 17:41:38,515 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.516-0200 [INFO] 2019-11-23 17:41:38,516 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.517-0200 [DEBUG] 2019-11-23 17:41:38,517 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.517-0200 [DEBUG] 2019-11-23 17:41:38,517 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 5
+2019-11-23T17:41:38.518-0200 [DEBUG] 2019-11-23 17:41:38,518 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.520-0200 [DEBUG] 2019-11-23 17:41:38,520 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.521-0200 [DEBUG] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.521-0200 [DEBUG] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.521-0200 [INFO] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.521-0200 [INFO] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.521-0200 [DEBUG] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.521-0200 [DEBUG] 2019-11-23 17:41:38,521 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 4
+2019-11-23T17:41:38.522-0200 [DEBUG] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.522-0200 [DEBUG] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.522-0200 [DEBUG] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.522-0200 [DEBUG] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.522-0200 [INFO] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.522-0200 [INFO] 2019-11-23 17:41:38,522 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.523-0200 [DEBUG] 2019-11-23 17:41:38,523 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.523-0200 [DEBUG] 2019-11-23 17:41:38,523 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 3
+2019-11-23T17:41:38.523-0200 [DEBUG] 2019-11-23 17:41:38,523 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.526-0200 [DEBUG] 2019-11-23 17:41:38,526 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.526-0200 [DEBUG] 2019-11-23 17:41:38,526 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.526-0200 [DEBUG] 2019-11-23 17:41:38,526 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.526-0200 [INFO] 2019-11-23 17:41:38,526 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.527-0200 [INFO] 2019-11-23 17:41:38,527 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 2
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.529-0200 [DEBUG] 2019-11-23 17:41:38,529 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.530-0200 [INFO] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.530-0200 [INFO] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 1
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.530-0200 [DEBUG] 2019-11-23 17:41:38,530 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.531-0200 [INFO] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.531-0200 [INFO] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.531-0200 [DEBUG] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.531-0200 [DEBUG] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.531-0200 [DEBUG] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 0
+2019-11-23T17:41:38.531-0200 [DEBUG] 2019-11-23 17:41:38,531 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 0
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.532-0200 [INFO] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.532-0200 [INFO] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 1
+2019-11-23T17:41:38.532-0200 [DEBUG] 2019-11-23 17:41:38,532 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 1
+2019-11-23T17:41:38.533-0200 [DEBUG] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.533-0200 [DEBUG] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.533-0200 [INFO] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.533-0200 [INFO] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.533-0200 [DEBUG] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.533-0200 [DEBUG] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.533-0200 [DEBUG] 2019-11-23 17:41:38,533 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 2
+2019-11-23T17:41:38.534-0200 [DEBUG] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 2
+2019-11-23T17:41:38.534-0200 [DEBUG] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.534-0200 [DEBUG] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.534-0200 [INFO] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.534-0200 [INFO] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.534-0200 [DEBUG] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.534-0200 [DEBUG] 2019-11-23 17:41:38,534 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.535-0200 [DEBUG] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 3
+2019-11-23T17:41:38.535-0200 [DEBUG] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 3
+2019-11-23T17:41:38.535-0200 [DEBUG] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.535-0200 [DEBUG] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:1
+2019-11-23T17:41:38.535-0200 [INFO] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.535-0200 [INFO] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.535-0200 [DEBUG] 2019-11-23 17:41:38,535 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.536-0200 [DEBUG] 2019-11-23 17:41:38,536 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.536-0200 [DEBUG] 2019-11-23 17:41:38,536 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 4
+2019-11-23T17:41:38.544-0200 [DEBUG] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 4
+2019-11-23T17:41:38.544-0200 [DEBUG] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.544-0200 [DEBUG] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.544-0200 [INFO] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.544-0200 [INFO] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.544-0200 [DEBUG] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.544-0200 [DEBUG] 2019-11-23 17:41:38,544 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.545-0200 [DEBUG] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 5
+2019-11-23T17:41:38.545-0200 [DEBUG] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 5
+2019-11-23T17:41:38.545-0200 [DEBUG] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.545-0200 [DEBUG] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.545-0200 [INFO] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.545-0200 [INFO] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.545-0200 [DEBUG] 2019-11-23 17:41:38,545 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.546-0200 [DEBUG] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.546-0200 [DEBUG] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 6
+2019-11-23T17:41:38.546-0200 [DEBUG] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 6
+2019-11-23T17:41:38.546-0200 [DEBUG] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.546-0200 [DEBUG] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.546-0200 [INFO] 2019-11-23 17:41:38,546 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.547-0200 [INFO] 2019-11-23 17:41:38,547 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.553-0200 [DEBUG] 2019-11-23 17:41:38,553 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.553-0200 [DEBUG] 2019-11-23 17:41:38,553 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.553-0200 [DEBUG] 2019-11-23 17:41:38,553 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 7
+2019-11-23T17:41:38.554-0200 [DEBUG] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 7
+2019-11-23T17:41:38.554-0200 [DEBUG] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.554-0200 [DEBUG] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.554-0200 [INFO] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.554-0200 [INFO] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.554-0200 [DEBUG] 2019-11-23 17:41:38,554 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.555-0200 [DEBUG] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.555-0200 [DEBUG] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 8
+2019-11-23T17:41:38.555-0200 [DEBUG] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 8
+2019-11-23T17:41:38.555-0200 [DEBUG] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.555-0200 [DEBUG] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.555-0200 [INFO] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.555-0200 [INFO] 2019-11-23 17:41:38,555 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método iniciado #####
+2019-11-23T17:41:38.556-0200 [DEBUG] 2019-11-23 17:41:38,556 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Parâmetros recebidos: 
+2019-11-23T17:41:38.559-0200 [DEBUG] 2019-11-23 17:41:38,559 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 1- linhaStart: 0
+2019-11-23T17:41:38.561-0200 [DEBUG] 2019-11-23 17:41:38,561 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 2- colunaStart: 9
+2019-11-23T17:41:38.562-0200 [DEBUG] 2019-11-23 17:41:38,562 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 3- numberOfSequence: 9
+2019-11-23T17:41:38.562-0200 [DEBUG] 2019-11-23 17:41:38,562 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - 4- numberOfSequence:10
+2019-11-23T17:41:38.562-0200 [DEBUG] 2019-11-23 17:41:38,562 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - Retorno:0
+2019-11-23T17:41:38.563-0200 [INFO] 2019-11-23 17:41:38,563 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.564-0200 [DEBUG] 2019-11-23 17:41:38,564 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchAllDnasDiagonalRight - Retorno:7
+2019-11-23T17:41:38.568-0200 [INFO] 2019-11-23 17:41:38,568 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchAllDnasDiagonalRight - ##### Método finalizado #####
+2019-11-23T17:41:38.624-0200 [INFO] 2019-11-23 17:41:38,624 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - ##### Método iniciado #####
+2019-11-23T17:41:38.624-0200 [DEBUG] 2019-11-23 17:41:38,624 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - Parâmetros recebidos: 
+2019-11-23T17:41:38.625-0200 [DEBUG] 2019-11-23 17:41:38,625 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - 1- linhaStart: 0
+2019-11-23T17:41:38.625-0200 [DEBUG] 2019-11-23 17:41:38,625 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - 2- colunaStart: 0
+2019-11-23T17:41:38.625-0200 [DEBUG] 2019-11-23 17:41:38,625 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - 3- numberOfSequence: 0
+2019-11-23T17:41:38.625-0200 [DEBUG] 2019-11-23 17:41:38,625 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - 4- numberOfSequence:4
+2019-11-23T17:41:38.625-0200 [DEBUG] 2019-11-23 17:41:38,625 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - Retorno:1
+2019-11-23T17:41:38.626-0200 [INFO] 2019-11-23 17:41:38,626 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaVertical - ##### Método finalizado #####
+2019-11-23T17:41:38.690-0200 [INFO] 2019-11-23 17:41:38,690 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - ##### Método iniciado #####
+2019-11-23T17:41:38.703-0200 [DEBUG] 2019-11-23 17:41:38,703 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - Parâmetros recebidos: 
+2019-11-23T17:41:38.703-0200 [DEBUG] 2019-11-23 17:41:38,703 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - 1- linhaStart: 6
+2019-11-23T17:41:38.705-0200 [DEBUG] 2019-11-23 17:41:38,705 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - 2- colunaStart: 0
+2019-11-23T17:41:38.706-0200 [DEBUG] 2019-11-23 17:41:38,706 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - 3- numberOfSequence: 0
+2019-11-23T17:41:38.706-0200 [DEBUG] 2019-11-23 17:41:38,706 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - 4- numberOfSequence:100
+2019-11-23T17:41:38.706-0200 [DEBUG] 2019-11-23 17:41:38,706 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - Retorno:79
+2019-11-23T17:41:38.707-0200 [INFO] 2019-11-23 17:41:38,707 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaHorizontal - ##### Método finalizado #####
+2019-11-23T17:41:38.759-0200 [INFO] 2019-11-23 17:41:38,759 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - ##### Método iniciado #####
+2019-11-23T17:41:38.759-0200 [DEBUG] 2019-11-23 17:41:38,759 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - Parâmetros recebidos: 
+2019-11-23T17:41:38.760-0200 [DEBUG] 2019-11-23 17:41:38,760 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - 1- linhaStart: 0
+2019-11-23T17:41:38.760-0200 [DEBUG] 2019-11-23 17:41:38,760 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - 2- colunaStart: 9
+2019-11-23T17:41:38.760-0200 [DEBUG] 2019-11-23 17:41:38,760 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - 3- numberOfSequence: 9
+2019-11-23T17:41:38.761-0200 [DEBUG] 2019-11-23 17:41:38,761 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - 4- numberOfSequence:2
+2019-11-23T17:41:38.762-0200 [DEBUG] 2019-11-23 17:41:38,762 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - Retorno:1
+2019-11-23T17:41:38.762-0200 [INFO] 2019-11-23 17:41:38,762 [main] [] com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness searchDnaDiagonalLeft - ##### Método finalizado #####
