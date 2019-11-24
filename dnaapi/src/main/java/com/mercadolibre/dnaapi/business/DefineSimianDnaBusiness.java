@@ -15,6 +15,51 @@ public class DefineSimianDnaBusiness {
     private static final Logger LOGGER = LogManager.getLogger(DefineSimianDnaBusiness.class);
 
     /**
+     * 
+     * @param dna              {@code Array} no qual o valor delimitante deve ser
+     *                         obtido.
+     * @param numberOfSequence Quantidade de elementos a serem considerados uma
+     *                         <b>repetição</b>.
+     * @param totalMatchSearch Total de repetições a serem buscadas.
+     * @return {@code True} se o <b>DNA</b> for de um <b>SIMIO</b>.
+     */
+    public static boolean isSimian(final char[][] dna, final int numberOfSequence, int totalMatchSearch) {
+
+        LOGGER.info("##### Método iniciado #####");
+        long inicioProcessamento = System.currentTimeMillis();
+        boolean isSimian = false;
+        int totalOfSequences = 0;
+
+        // 1° chamada
+        totalOfSequences = searchAllDnasVertical(dna, numberOfSequence, totalMatchSearch);
+
+        // Nao varrer todo o array se o resultado ja tiver sido obtido!!!
+        if (totalOfSequences >= 2) {
+
+            isSimian = true;
+
+        } else {
+            
+            totalMatchSearch = searchAllDnasHorizontal(dna, numberOfSequence, totalMatchSearch);
+
+            // Buscas mais custosas!!
+            if (totalOfSequences >= 2) {
+                totalOfSequences = searchAllDnasDiagonalRight(dna, numberOfSequence, totalMatchSearch);
+                isSimian = true;
+            } else {
+                totalOfSequences = searchAllDnasDiagonalLeft(dna, numberOfSequence, totalMatchSearch);
+                if (totalOfSequences >= 2) {
+                    isSimian = true;
+                }
+            }
+        }
+
+        LOGGER.info("Tempo total de processamento: " + (System.currentTimeMillis() - inicioProcessamento) + " ms");
+        LOGGER.info("##### Método finalizado #####");
+        return isSimian;
+    }
+
+    /**
      * Obtem a <b>posicao minima</b> onde o ponteiro do inicio de pesquisa deve ser
      * posionado.
      * 
@@ -25,7 +70,7 @@ public class DefineSimianDnaBusiness {
      * @return Retorna a posicao onde a pesquisa deve ser iniciada no eixo Y da
      *         matriz.
      */
-    public static int getMinimumPointSearch(char[][] dna, int numberOfSequence) {
+    public static int getMinimumPointSearch(final char[][] dna, final int numberOfSequence) {
 
         int minimumPointSearch = dna.length - numberOfSequence;
 
@@ -34,10 +79,44 @@ public class DefineSimianDnaBusiness {
 
     /**
      * Realiza uma busca do total de conjuntos de elementos repetidos na <b>DIAGONAL
-     * a direita.</b>
+     * a esquerda</b> da matriz.
      * 
      * @param dna              <b>Sequencia de caracteres</b> onde a busca de
-     *                         elemenstos repetidos sera retornado
+     *                         elementos repetidos sera retornado
+     * @param numberOfSequence Quantidade de elementos a serem considerados uma
+     *                         <b>repetição</b>.
+     * @param totalMatchSearch Total de repetições a serem buscadas.
+     * @return Retorna o total de <b>repetições encontradas</b>.
+     */
+    public static int searchAllDnasDiagonalLeft(final char[][] dna, final int numberOfSequence,
+            final int totalMatchSearch) {
+
+        LOGGER.info("##### Método iniciado #####");
+        int linha = getMinimumPointSearch(dna, numberOfSequence);
+        int totalOfSequences = 0;
+        int coluna = dna.length - 1;
+
+        while (coluna >= 0) {
+            totalOfSequences += searchDnaDiagonalLeft(linha, coluna, dna, numberOfSequence, totalMatchSearch);
+            if (linha == 0) {
+                coluna--;
+            } else {
+                linha--;
+            }
+        }
+
+        LOGGER.debug("Retorno:" + totalOfSequences);
+        LOGGER.info("##### Método finalizado #####");
+
+        return totalOfSequences;
+    }
+
+    /**
+     * Realiza uma busca do total de conjuntos de elementos repetidos na <b>DIAGONAL
+     * a direita</b> da matriz.
+     * 
+     * @param dna              <b>Sequencia de caracteres</b> onde a busca de
+     *                         elementos repetidos sera retornado
      * @param numberOfSequence Quantidade de elementos a serem considerados uma
      *                         <b>repetição</b>.
      * @param totalMatchSearch Total de repetições a serem buscadas.
@@ -58,6 +137,66 @@ public class DefineSimianDnaBusiness {
             } else {
                 linha--;
             }
+        }
+
+        LOGGER.debug("Retorno:" + totalOfSequences);
+        LOGGER.info("##### Método finalizado #####");
+
+        return totalOfSequences;
+    }
+
+    /**
+     * Realiza uma busca do total de conjuntos de elementos repetidos na
+     * <b>horizontal</b> da matriz.
+     * 
+     * @param dna              <b>Sequencia de caracteres</b> onde a busca de
+     *                         elementos repetidos sera retornado
+     * @param numberOfSequence Quantidade de elementos a serem considerados uma
+     *                         <b>repetição</b>.
+     * @param totalMatchSearch Total de repetições a serem buscadas.
+     * @return
+     */
+    public static int searchAllDnasHorizontal(final char[][] dna, final int numberOfSequence,
+            final int totalMatchSearch) {
+
+        LOGGER.info("##### Método iniciado #####");
+        int linha = 0;
+        int totalOfSequences = 0;
+        int coluna = 0;
+
+        while (linha < dna.length) {
+            totalOfSequences += searchDnaHorizontal(linha, coluna, dna, numberOfSequence, totalMatchSearch);
+            linha++;
+        }
+
+        LOGGER.debug("Retorno:" + totalOfSequences);
+        LOGGER.info("##### Método finalizado #####");
+
+        return totalOfSequences;
+    }
+
+    /**
+     * Realiza uma busca do total de conjuntos de elementos repetidos na
+     * <b>vertical</b> da matriz.
+     * 
+     * @param dna              <b>Sequencia de caracteres</b> onde a busca de
+     *                         elementos repetidos sera retornado
+     * @param numberOfSequence Quantidade de elementos a serem considerados uma
+     *                         <b>repetição</b>.
+     * @param totalMatchSearch Total de repetições a serem buscadas.
+     * @return
+     */
+    public static int searchAllDnasVertical(final char[][] dna, final int numberOfSequence,
+            final int totalMatchSearch) {
+
+        LOGGER.info("##### Método iniciado #####");
+        int linha = 0;
+        int totalOfSequences = 0;
+        int coluna = 0;
+
+        while (coluna < dna.length) {
+            totalOfSequences += searchDnaVertical(linha, coluna, dna, numberOfSequence, totalMatchSearch);
+            coluna++;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
