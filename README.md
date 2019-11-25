@@ -1,5 +1,5 @@
 # Simian Test
-Projeto criado para realizada de test job interview no **Mercado Libre**.
+Projeto criado para realização de test job interview no **Mercado Libre**.
 
 ## Utilizar as seguintes versões:
 1. JRE 10.0.2 ou superior
