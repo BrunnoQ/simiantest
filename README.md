@@ -7,8 +7,8 @@ Projeto criado para realização de test job interview no **Mercado Libre**.
 
 ## Executar a aplicação
 Para executar a aplicação, utilizar o JAR *dnaapi-0.0.1-SNAPSHOT.jar* , contido na pasta
-*executar* deste repositório utiizando o seguinte comando:
-* java -Xms500m -Xmx1g -jar dnaapi-0.0.1-SNAPSHOT.jar
+**EXECUTAR** deste repositório utiizando o seguinte comando:
+**java -Xms500m -Xmx1g -jar dnaapi-0.0.1-SNAPSHOT.jar**
 
 **NOTA:** Executar o jar *com permissão de escrita e leitura* ao diretório em que for executado, 
 por conta do *LOG*.
