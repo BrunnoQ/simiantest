@@ -28,32 +28,33 @@ public class DefineSimianDnaBusiness {
         LOGGER.info("##### Método iniciado #####");
         long inicioProcessamento = System.currentTimeMillis();
         boolean isSimian = false;
-        int totalOfSequences = 0;
+        int totalOfMatch = 0;
 
         // 1° chamada
-        totalOfSequences = searchAllDnasVertical(dna, numberOfSequence, totalMatchSearch);
+        totalOfMatch = searchAllDnasVertical(dna, numberOfSequence, totalMatchSearch);
 
         // Nao varrer todo o array se o resultado ja tiver sido obtido!!!
-        if (totalOfSequences >= 2) {
+        if (totalOfMatch >= 2) {
 
             isSimian = true;
 
         } else {
             
-            totalMatchSearch = searchAllDnasHorizontal(dna, numberOfSequence, totalMatchSearch);
+            totalOfMatch += searchAllDnasHorizontal(dna, numberOfSequence, totalMatchSearch);
 
             // Buscas mais custosas!!
-            if (totalOfSequences >= 2) {
-                totalOfSequences = searchAllDnasDiagonalRight(dna, numberOfSequence, totalMatchSearch);
+            if (totalOfMatch >= 2) {
+                totalOfMatch += searchAllDnasDiagonalRight(dna, numberOfSequence, totalMatchSearch);
                 isSimian = true;
             } else {
-                totalOfSequences = searchAllDnasDiagonalLeft(dna, numberOfSequence, totalMatchSearch);
-                if (totalOfSequences >= 2) {
+                totalOfMatch += searchAllDnasDiagonalLeft(dna, numberOfSequence, totalMatchSearch);
+                if (totalOfMatch >= 2) {
                     isSimian = true;
                 }
             }
         }
 
+        LOGGER.debug("totalOfMatch: "+totalOfMatch);
         LOGGER.info("Tempo total de processamento: " + (System.currentTimeMillis() - inicioProcessamento) + " ms");
         LOGGER.info("##### Método finalizado #####");
         return isSimian;

@@ -75,7 +75,7 @@ public class DefineSimianDnaBusinessTest {
                          'C','A','C','G','C','C','C','C','C','C',
                          'C','A','C','C','C','A','C','C','C','T',};
         int i2 = 0;
-        // popular essa porra horizontal
+        // popular horizontal
         for (int i = 0; i < quantidadeLinhas; i++) {
 
             for (int hr = 0; hr < quantidadeColunas; hr++) {

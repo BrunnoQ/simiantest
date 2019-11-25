@@ -18,8 +18,8 @@ import org.hibernate.validator.constraints.Length;
 public class DnaForm {
 
     @NotNull
-    @Size(min = 4)
-    private List<@NotEmpty @NotNull @Length(min = 4) 
+    @Size(min = 4,max=10000)
+    private List<@NotEmpty @NotNull @Length(min = 4, max= 10000) 
     @Pattern(regexp = "[^bBdefDEFh-sH-Su-zU-Z\\d\\sáéíóúàèìòùâêîôûãõç!@#$%^&*(),.?\\\":{}|<>]+") String> dna;
 
     public List<String> getDna() {
