@@ -39,3 +39,4 @@ build/
 ### GERAL ###
 mvn
 mvnw.cmd
+logs/

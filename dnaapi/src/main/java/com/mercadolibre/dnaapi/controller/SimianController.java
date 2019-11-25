@@ -1,6 +1,7 @@
 package com.mercadolibre.dnaapi.controller;
 
 import java.time.LocalDateTime;
+import java.util.Iterator;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,8 +12,10 @@ import com.mercadolibre.dnaapi.entity.DnaEntity;
 import com.mercadolibre.dnaapi.exception.NoEqualLengthException;
 import com.mercadolibre.dnaapi.forms.DnaForm;
 import com.mercadolibre.dnaapi.forms.DnaResponse;
+import com.mercadolibre.dnaapi.forms.StatsResponse;
 import com.mercadolibre.dnaapi.repository.IDnaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -54,14 +57,17 @@ public class SimianController {
         boolean isSimian = DefineSimianDnaBusiness.isSimian(dna, 4, 2);
         response.setIs_simian(isSimian);
 
+        // Unicidade garantida utilizando o hash code!!!
         List<DnaEntity> dnas = dnaRepository.findByDnaHash(input.hashCode());
 
         if (dnas.size() == 0) {
 
             DnaEntity dnaEntity = dnaRepository.save(new DnaEntity(isSimian, input.hashCode(), LocalDateTime.now()));
-            // URI uri = uriBuilder.path("/simian/{id}").buildAndExpand(dnaEntity.getId()).toUri();
-            // responseHttp = ResponseEntity.created(uri).body(response); enunciado pede 200 talvez tenha robo de testes.....
-            LOGGER.debug("NOVO DNA SALVO"+dnaEntity);
+            // URI uri =
+            // uriBuilder.path("/simian/{id}").buildAndExpand(dnaEntity.getId()).toUri();
+            // responseHttp = ResponseEntity.created(uri).body(response); enunciado pede 200
+            // talvez tenha robo de testes.....
+            LOGGER.debug("NOVO DNA SALVO" + dnaEntity);
         }
 
         return ResponseEntity.status(HttpStatus.OK).body(response);
@@ -78,6 +84,39 @@ public class SimianController {
         DnaEntity dnaEntity = dnaRepository.getOne(id);
         DnaDTO dnaDTO = new DnaDTO(dnaEntity);
         return ResponseEntity.status(HttpStatus.OK).body(dnaDTO);
+    }
+
+    @GetMapping(path="stats",produces = "application/json")
+    public ResponseEntity<StatsResponse> obterEstatistica(){
+
+        int count_simian_dna = 0;
+        int count_human_dna =0;
+        double ratio = 0;
+        boolean isSimian = true;
+        //Primeiro os Simios
+        List<DnaEntity> dnaEntities = dnaRepository.findAll(Sort.by(Sort.Direction.DESC, "isSimian"));
+        Iterator<DnaEntity> iterator = dnaEntities.iterator();
+
+        //Nao precisa varrer todo array soh pegar os simios, performance
+        while(iterator.hasNext() && isSimian){
+
+            DnaEntity dnaEntity = iterator.next();
+
+            if (dnaEntity.getIsSimian()){
+                count_simian_dna += 1;
+            } else {
+                isSimian = false; //break
+            }
+
+        }
+
+        count_human_dna = dnaEntities.size() - count_simian_dna;
+        
+        if(count_human_dna != 0){
+            ratio = (double) count_simian_dna / count_human_dna;
+        }
+
+        return ResponseEntity.status(HttpStatus.OK).body(new StatsResponse(count_simian_dna,count_human_dna,ratio));
     }
 
     /**
