@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimianApplication",
+            "request": "launch",
+            "mainClass": "com.mercadolibre.dnaapi.SimianApplication",
+            "projectName": "dnaapi"
+        }
+    ]
+}
