@@ -1,5 +1,5 @@
 # Simian Test
-Projeto criado para realização de puzzle.
+Projeto criado para resolução de puzzle.
 
 ## Utilizar as seguintes versões:
 1. JRE 10.0.2 ou superior
