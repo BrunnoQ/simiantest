@@ -17,6 +17,7 @@ import com.mercadolibre.dnaapi.repository.IDnaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -79,7 +80,7 @@ public class SimianController {
      * @param id
      * @return O DNA conforme ID informado.
      */
-    @GetMapping(produces = "application/json")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<DnaDTO> obterDnaPorID(@RequestParam(name = "id") Long id) {
         DnaEntity dnaEntity = dnaRepository.getOne(id);
         DnaDTO dnaDTO = new DnaDTO(dnaEntity);
