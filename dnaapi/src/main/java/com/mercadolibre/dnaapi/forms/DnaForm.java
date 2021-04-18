@@ -11,8 +11,8 @@ import org.hibernate.validator.constraints.Length;
 /**
  * Classe que representa o input da API.
  * 
- * @@author Brunno Silva
- * @@since 24/11/2019
+ * @author Brunno Silva
+ * @since 24/11/2019
  */
 public class DnaForm {
 
