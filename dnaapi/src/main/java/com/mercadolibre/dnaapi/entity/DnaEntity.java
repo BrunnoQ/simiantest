@@ -113,5 +113,5 @@ public class DnaEntity {
         return "DnaEntity [dataHoraCriacao=" + dataHoraCriacao + ", dnaHash=" + dnaHash + ", id=" + id + ", isSimian="
                 + isSimian + "]";
     }
-    
+
 }
