@@ -1,10 +1,9 @@
 package com.mercadolibre.dnaapi.business;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Execucao dos testes unitarios dos metodos da 
@@ -16,7 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class DefineSimianDnaBusinessTest {
 
 
-    /**
+    /*
      * Gabarito 6x6:
      *  |_A_||_G_||_A_||_A_||_A_||_A_|
         |_A_||_A_||_G_||_A_||_G_||_G_|
@@ -25,7 +24,7 @@ public class DefineSimianDnaBusinessTest {
         |_C_||_T_||_A_||_G_||_C_||_C_|
         |_C_||_A_||_C_||_C_||_T_||_C_|
      */
-    /**
+    /*
      * Gabarito 10x10: 
      * |_A_||_G_||_A_||_A_||_A_||_A_||_A_||_A_||_G_||_A_|
        |_G_||_G_||_G_||_A_||_G_||_G_||_G_||_T_||_C_||_A_|
@@ -99,6 +98,7 @@ public class DefineSimianDnaBusinessTest {
         assertEquals(Integer.valueOf(2), totalOfSequences);
     }
 
+    @Test
     public void searchDnaDiagonalLeft(){
         int totalOfSequences = DefineSimianDnaBusiness.searchDnaDiagonalLeft(0, 9, criarArrayHorinzontal(100, 100), 4, 2);
         assertEquals(Integer.valueOf(1), totalOfSequences);
@@ -145,13 +145,13 @@ public class DefineSimianDnaBusinessTest {
 
     @Test
     public void isSimian(){
-        boolean isSimian = false;
+        boolean isSimian;
         isSimian = DefineSimianDnaBusiness.isSimian(criarArrayHorinzontal(6, 6), 4, 2);
         assertNotEquals(true, isSimian);
         isSimian = DefineSimianDnaBusiness.isSimian(criarArrayHorinzontal(10, 10), 4, 2);
-        assertEquals(true, isSimian);
+        assertTrue(isSimian);
         isSimian = DefineSimianDnaBusiness.isSimian(criarArrayHorinzontal(20, 20), 4, 2);
-        assertEquals(true, isSimian);
+        assertTrue(isSimian);
     }
    
 }
