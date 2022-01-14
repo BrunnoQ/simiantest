@@ -1,11 +1,10 @@
 package com.mercadolibre.dnaapi.controller;
 
 import java.time.LocalDateTime;
+
 import java.util.Iterator;
 import java.util.List;
-
 import javax.validation.Valid;
-
 import com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness;
 import com.mercadolibre.dnaapi.dto.DnaDTO;
 import com.mercadolibre.dnaapi.entity.DnaEntity;
@@ -14,7 +13,6 @@ import com.mercadolibre.dnaapi.forms.DnaForm;
 import com.mercadolibre.dnaapi.forms.DnaResponse;
 import com.mercadolibre.dnaapi.forms.StatsResponse;
 import com.mercadolibre.dnaapi.repository.IDnaRepository;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +31,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * Classe responsavel por orquestrar as regras de negocio da API.
  * 
- * @@author Brunno Silva
+ * @author Brunno Silva
  * @since 23/11/2019
  */
 @RestController
@@ -94,7 +92,7 @@ public class SimianController {
     public ResponseEntity<StatsResponse> obterEstatistica(){
 
         int count_simian_dna = 0;
-        int count_human_dna =0;
+        int count_human_dna;
         double ratio = 0;
         boolean isSimian = true;
         //Primeiro os Simios
@@ -140,16 +138,16 @@ public class SimianController {
             if (linha.length != input.getDna().size()) {
                 throw new NoEqualLengthException("TODOS os conjutos de nucleotidos devem possuir o MESMO TAMANHO!!!!!");
             } else {
-
-                for (int c = 0; c < linha.length; c++) {
+                int c = 0;
+                while (c < linha.length) {
                     dna[l][c] = linha[c];
+                    c++;
                 }
             }
 
             l++;
 
         }
-
         return dna;
     }
 
