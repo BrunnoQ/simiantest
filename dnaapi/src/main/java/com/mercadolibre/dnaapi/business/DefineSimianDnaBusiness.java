@@ -26,9 +26,9 @@ public class DefineSimianDnaBusiness {
     public static boolean isSimian(final char[][] dna, final int numberOfSequence, int totalMatchSearch) {
 
         LOGGER.info("##### Método iniciado #####");
-        long inicioProcessamento = System.currentTimeMillis();
+        long startProcessing = System.currentTimeMillis();
         boolean isSimian = false;
-        int totalOfMatch = 0;
+        int totalOfMatch;
 
         // 1° chamada
         totalOfMatch = searchAllDnasVertical(dna, numberOfSequence, totalMatchSearch);
@@ -55,7 +55,7 @@ public class DefineSimianDnaBusiness {
         }
 
         LOGGER.debug("totalOfMatch: "+totalOfMatch);
-        LOGGER.info("Tempo total de processamento: " + (System.currentTimeMillis() - inicioProcessamento) + " ms");
+        LOGGER.info("Tempo total de processamento: " + (System.currentTimeMillis() - startProcessing) + " ms");
         LOGGER.info("##### Método finalizado #####");
         return isSimian;
     }
@@ -71,11 +71,8 @@ public class DefineSimianDnaBusiness {
      * @return Retorna a posicao onde a pesquisa deve ser iniciada no eixo Y da
      *         matriz.
      */
-    public static int getMinimumPointSearch(final char[][] dna, final int numberOfSequence) {
-
-        int minimumPointSearch = dna.length - numberOfSequence;
-
-        return minimumPointSearch;
+    private static int getMinimumPointSearch(final char[][] dna, final int numberOfSequence) {
+        return dna.length - numberOfSequence;
     }
 
     /**
@@ -93,16 +90,16 @@ public class DefineSimianDnaBusiness {
             final int totalMatchSearch) {
 
         LOGGER.info("##### Método iniciado #####");
-        int linha = getMinimumPointSearch(dna, numberOfSequence);
+        int line = getMinimumPointSearch(dna, numberOfSequence);
         int totalOfSequences = 0;
-        int coluna = dna.length - 1;
+        int column = dna.length - 1;
 
-        while (coluna >= 0) {
-            totalOfSequences += searchDnaDiagonalLeft(linha, coluna, dna, numberOfSequence, totalMatchSearch);
-            if (linha == 0) {
-                coluna--;
+        while (column >= 0) {
+            totalOfSequences += searchDnaDiagonalLeft(line, column, dna, numberOfSequence, totalMatchSearch);
+            if (line == 0) {
+                column--;
             } else {
-                linha--;
+                line--;
             }
         }
 
@@ -127,16 +124,16 @@ public class DefineSimianDnaBusiness {
             final int totalMatchSearch) {
 
         LOGGER.info("##### Método iniciado #####");
-        int linha = getMinimumPointSearch(dna, numberOfSequence);
+        int line = getMinimumPointSearch(dna, numberOfSequence);
         int totalOfSequences = 0;
-        int coluna = 0;
+        int column = 0;
 
-        while (coluna < dna.length) {
-            totalOfSequences += searchDnaDiagonalRight(linha, coluna, dna, numberOfSequence, totalMatchSearch);
-            if (linha == 0) {
-                coluna++;
+        while (column < dna.length) {
+            totalOfSequences += searchDnaDiagonalRight(line, column, dna, numberOfSequence, totalMatchSearch);
+            if (line == 0) {
+                column++;
             } else {
-                linha--;
+                line--;
             }
         }
 
@@ -155,7 +152,7 @@ public class DefineSimianDnaBusiness {
      * @param numberOfSequence Quantidade de elementos a serem considerados uma
      *                         <b>repetição</b>.
      * @param totalMatchSearch Total de repetições a serem buscadas.
-     * @return
+     * @return total de elementos encontrados.
      */
     public static int searchAllDnasHorizontal(final char[][] dna, final int numberOfSequence,
             final int totalMatchSearch) {
@@ -185,19 +182,19 @@ public class DefineSimianDnaBusiness {
      * @param numberOfSequence Quantidade de elementos a serem considerados uma
      *                         <b>repetição</b>.
      * @param totalMatchSearch Total de repetições a serem buscadas.
-     * @return
+     * @return total de elementos encontrados.
      */
     public static int searchAllDnasVertical(final char[][] dna, final int numberOfSequence,
             final int totalMatchSearch) {
 
         LOGGER.info("##### Método iniciado #####");
-        int linha = 0;
+        int line = 0;
         int totalOfSequences = 0;
-        int coluna = 0;
+        int column = 0;
 
-        while (coluna < dna.length) {
-            totalOfSequences += searchDnaVertical(linha, coluna, dna, numberOfSequence, totalMatchSearch);
-            coluna++;
+        while (column < dna.length) {
+            totalOfSequences += searchDnaVertical(line, column, dna, numberOfSequence, totalMatchSearch);
+            column++;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
@@ -229,21 +226,21 @@ public class DefineSimianDnaBusiness {
         LOGGER.debug("3- numberOfSequence: " + colunaStart);
         LOGGER.debug("4- numberOfSequence:" + totalMatchSearch);
         // Variaveis para manipulacao local
-        int linha = linhaStart;
-        int coluna = colunaStart;
+        int line = linhaStart;
+        int column = colunaStart;
         char currentNucleotido;
         int countSequence = 1;
         int totalOfSequences = 0;
 
         // Percorrer ate o penultimo elemento para comparar!
-        while (linha < dna.length - 1 & coluna < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
+        while (line < dna.length - 1 & column < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
 
-            currentNucleotido = dna[linha][coluna];
+            currentNucleotido = dna[line][column];
 
-            /**
+            /*
              * Comparar o nucleotido corrente com o proximo.
              */
-            if (currentNucleotido == dna[linha + 1][coluna + 1]) {
+            if (currentNucleotido == dna[line + 1][column + 1]) {
                 countSequence++;
 
                 if (countSequence == numberOfSequence) {
@@ -255,8 +252,8 @@ public class DefineSimianDnaBusiness {
             }
 
             // Pular linha e coluna na diagonal a direita
-            linha++;
-            coluna++;
+            line++;
+            column++;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
@@ -288,21 +285,21 @@ public class DefineSimianDnaBusiness {
         LOGGER.debug("3- numberOfSequence: " + colunaStart);
         LOGGER.debug("4- numberOfSequence:" + totalMatchSearch);
         // Variaveis para manipulacao local
-        int linha = linhaStart;
-        int coluna = colunaStart;
+        int line = linhaStart;
+        int column = colunaStart;
         char currentNucleotido;
         int countSequence = 1;
         int totalOfSequences = 0;
 
         // Percorrer ate o penultimo elemento para comparar!
-        while (linha < dna.length - 1 & coluna > 1 & (totalOfSequences != totalMatchSearch)) {
+        while (line < dna.length - 1 & column > 1 & (totalOfSequences != totalMatchSearch)) {
 
-            currentNucleotido = dna[linha][coluna];
+            currentNucleotido = dna[line][column];
 
-            /**
+            /*
              * Comparar o nucleotido corrente com o proximo.
              */
-            if (currentNucleotido == dna[linha + 1][coluna - 1]) {
+            if (currentNucleotido == dna[line + 1][column - 1]) {
                 countSequence++;
 
                 if (countSequence == numberOfSequence) {
@@ -314,8 +311,8 @@ public class DefineSimianDnaBusiness {
             }
 
             // Pular linha e coluna na diagonal a esquerda
-            linha++;
-            coluna--;
+            line++;
+            column--;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
@@ -348,21 +345,20 @@ public class DefineSimianDnaBusiness {
         LOGGER.debug("3- numberOfSequence: " + colunaStart);
         LOGGER.debug("4- numberOfSequence:" + totalMatchSearch);
         // Variaveis para manipulacao local
-        int linha = linhaStart;
-        int coluna = colunaStart;
+        int column = colunaStart;
         char currentNucleotido;
         int countSequence = 1;
         int totalOfSequences = 0;
 
         // Percorrer ate o penultimo elemento para comparar!
-        while (coluna < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
+        while (column < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
 
-            currentNucleotido = dna[linha][coluna];
+            currentNucleotido = dna[linhaStart][column];
 
-            /**
+            /*
              * Comparar o nucleotido corrente com o proximo.
              */
-            if (currentNucleotido == dna[linha][coluna + 1]) {
+            if (currentNucleotido == dna[linhaStart][column + 1]) {
                 countSequence++;
 
                 if (countSequence == numberOfSequence) {
@@ -374,7 +370,7 @@ public class DefineSimianDnaBusiness {
             }
 
             // Pular coluna a direita
-            coluna++;
+            column++;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
@@ -406,21 +402,20 @@ public class DefineSimianDnaBusiness {
         LOGGER.debug("3- numberOfSequence: " + colunaStart);
         LOGGER.debug("4- numberOfSequence:" + totalMatchSearch);
         // Variaveis para manipulacao local
-        int linha = linhaStart;
-        int coluna = colunaStart;
+        int line = linhaStart;
         char currentNucleotido;
         int countSequence = 1;
         int totalOfSequences = 0;
 
         // Percorrer ate o penultimo elemento para comparar!
-        while (linha < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
+        while (line < dna.length - 1 & (totalOfSequences != totalMatchSearch)) {
 
-            currentNucleotido = dna[linha][coluna];
+            currentNucleotido = dna[line][colunaStart];
 
-            /**
+            /*
              * Comparar o nucleotido corrente com o proximo.
              */
-            if (currentNucleotido == dna[linha + 1][coluna]) {
+            if (currentNucleotido == dna[line + 1][colunaStart]) {
                 countSequence++;
 
                 if (countSequence == numberOfSequence) {
@@ -432,7 +427,7 @@ public class DefineSimianDnaBusiness {
             }
 
             // Pular linha
-            linha++;
+            line++;
         }
 
         LOGGER.debug("Retorno:" + totalOfSequences);
