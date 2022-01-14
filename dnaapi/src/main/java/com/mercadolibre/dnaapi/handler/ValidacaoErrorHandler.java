@@ -31,13 +31,17 @@ public class ValidacaoErrorHandler {
         List<ValidacaoErroDTO> erros = new ArrayList<>();
         List<FieldError> fieldErrors = exception.getBindingResult().getFieldErrors();
 
+        errorFilter(erros, fieldErrors);
+
+        return erros;
+    }
+
+    private void errorFilter(List<ValidacaoErroDTO> erros, List<FieldError> fieldErrors) {
         fieldErrors.forEach(e -> {
             String mensagem = messageSource.getMessage(e, LocaleContextHolder.getLocale());
             ValidacaoErroDTO erro = new ValidacaoErroDTO(e.getField(),mensagem);
             erros.add(erro);
         });
-
-        return erros; 
     }
 
 }

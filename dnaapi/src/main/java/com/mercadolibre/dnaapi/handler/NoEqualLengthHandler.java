@@ -1,14 +1,14 @@
 package com.mercadolibre.dnaapi.handler;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.mercadolibre.dnaapi.dto.ValidacaoErroDTO;
 import com.mercadolibre.dnaapi.exception.NoEqualLengthException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Handler de erros nos casos de sequencia de strings com 
