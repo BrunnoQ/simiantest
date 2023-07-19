@@ -73,11 +73,6 @@
 			<version>3.15.3</version>
 		</dependency>
 		<dependency>
-			<groupId>br.com.brunnus</groupId>
-			<artifactId>cachemanager</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>io.opentracing.contrib</groupId>
 			<artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
 			<version>3.1.2</version>
