@@ -2,30 +2,30 @@ package com.mercadolibre.dnaapi.forms;
 
 public class StatsResponse {
 
-    private int count_simian_dna;
-    private int count_human_dna;
+    private int countSimianDna;
+    private int countHumanDna;
     private double ratio;
 
-    public StatsResponse(int count_simian_dna, int count_human_dna, double ratio) {
-        this.count_simian_dna = count_simian_dna;
-        this.count_human_dna = count_human_dna;
+    public StatsResponse(int countSimianDna, int countHumanDna, double ratio) {
+        this.countSimianDna = countSimianDna;
+        this.countHumanDna = countHumanDna;
         this.ratio = ratio;
     }
 
-    public int getCount_simian_dna() {
-        return count_simian_dna;
+    public int getCountSimianDna() {
+        return countSimianDna;
     }
 
-    public void setCount_simian_dna(int count_simian_dna) {
-        this.count_simian_dna = count_simian_dna;
+    public void setCountSimianDna(int countSimianDna) {
+        this.countSimianDna = countSimianDna;
     }
 
-    public int getCount_human_dna() {
-        return count_human_dna;
+    public int getCountHumanDna() {
+        return countHumanDna;
     }
 
-    public void setCount_human_dna(int count_human_dna) {
-        this.count_human_dna = count_human_dna;
+    public void setCountHumanDna(int countHumanDna) {
+        this.countHumanDna = countHumanDna;
     }
 
     public double getRatio() {
@@ -35,5 +35,4 @@ public class StatsResponse {
     public void setRatio(double ratio) {
         this.ratio = ratio;
     }
-
 }

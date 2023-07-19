@@ -1,5 +1,6 @@
 package com.mercadolibre.dnaapi.handler;
 
+import com.mercadolibre.dnaapi.dto.ValidacaoErroDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -9,39 +10,33 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.util.ArrayList;
 import java.util.List;
-
-import com.mercadolibre.dnaapi.dto.ValidacaoErroDTO;
+import java.util.stream.Collectors;
 
 /**
- * Encapsula e manipulacao erros de validacao da API.
+ * Encapsula e manipula erros de validação da API.
  */
 @RestControllerAdvice
 public class ValidacaoErrorHandler {
 
+    private final MessageSource messageSource;
+
     @Autowired
-    private MessageSource messageSource;
+    public ValidacaoErrorHandler(MessageSource messageSource) {
+        this.messageSource = messageSource;
+    }
 
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public List<ValidacaoErroDTO> handler(MethodArgumentNotValidException exception){
-
-        List<ValidacaoErroDTO> erros = new ArrayList<>();
+    public List<ValidacaoErroDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception) {
         List<FieldError> fieldErrors = exception.getBindingResult().getFieldErrors();
-
-        errorFilter(erros, fieldErrors);
-
-        return erros;
+        return fieldErrors.stream()
+                .map(this::mapFieldErrorToValidacaoErroDTO)
+                .collect(Collectors.toList());
     }
 
-    private void errorFilter(List<ValidacaoErroDTO> erros, List<FieldError> fieldErrors) {
-        fieldErrors.forEach(e -> {
-            String mensagem = messageSource.getMessage(e, LocaleContextHolder.getLocale());
-            ValidacaoErroDTO erro = new ValidacaoErroDTO(e.getField(),mensagem);
-            erros.add(erro);
-        });
+    private ValidacaoErroDTO mapFieldErrorToValidacaoErroDTO(FieldError fieldError) {
+        String mensagem = messageSource.getMessage(fieldError, LocaleContextHolder.getLocale());
+        return new ValidacaoErroDTO(fieldError.getField(), mensagem);
     }
-
 }

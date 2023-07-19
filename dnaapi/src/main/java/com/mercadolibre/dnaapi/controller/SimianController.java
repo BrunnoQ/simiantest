@@ -3,9 +3,7 @@ package com.mercadolibre.dnaapi.controller;
 import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.List;
-
 import javax.validation.Valid;
-
 import com.mercadolibre.dnaapi.business.DefineSimianDnaBusiness;
 import com.mercadolibre.dnaapi.dto.DnaDTO;
 import com.mercadolibre.dnaapi.entity.DnaEntity;
@@ -14,12 +12,10 @@ import com.mercadolibre.dnaapi.forms.DnaForm;
 import com.mercadolibre.dnaapi.forms.DnaResponse;
 import com.mercadolibre.dnaapi.forms.StatsResponse;
 import com.mercadolibre.dnaapi.repository.IDnaRepository;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

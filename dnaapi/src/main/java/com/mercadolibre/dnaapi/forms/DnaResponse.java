@@ -2,7 +2,7 @@ package com.mercadolibre.dnaapi.forms;
 
 /**
  * Resposta de API para denificao de DNA.
- * @@author Brunno Silva
+ * @author Brunno Silva
  * @since 23/11/2019
  */
 public class DnaResponse{

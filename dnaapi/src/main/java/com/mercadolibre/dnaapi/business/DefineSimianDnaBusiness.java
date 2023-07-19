@@ -437,3 +437,5 @@ public class DefineSimianDnaBusiness {
     }
 
 }
+/*NEM O CHATGPT DEU CONTA DE REFATORAR ESSA TROLHJA, melhor nem mexer e deixar do jeito que está , o importante é que
+* funciona!*/
